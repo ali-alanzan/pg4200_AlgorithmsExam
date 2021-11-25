@@ -1,0 +1,25 @@
+
+There is no big difference as my implement is the same implementation But I will try with What I understood
+
+ is not the best choice considering worst case, as  a student.
+- By using the implementation of ArrayList
+    In worst-case we must traverse the whole array each time we want to put, get or delete
+
+- Implement a hashMap would be better choice in this case,
+    as we will store the student in a key, value pair(s)
+    we don't need to traverse the whole array each time we want to put, get or delete
+    the operation will be performed in constant time O(1)
+
+-  a binary tree would be better than the HashMap in this case,
+    because we don't know the length of the students
+    in worst case during the array copy the HashMap performance O(n)
+    And the binary Tree Search performance is O(log n)
+
+- My implementation would perform better than the other implementations
+    because we accessing the targeted Tree via index in the array in constant time then search it
+    without traversing the big Tree with all the students in it
+
+- The method getByName's performance are worse than other operations defined in MyMap interface
+    The defined method in the interface MyMap have time complexity O(log n)
+    The method getByName that search in the whole array and traverse each tree at each index
+    gives us O(n log n)
