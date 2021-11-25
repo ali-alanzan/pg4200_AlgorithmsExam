@@ -1,0 +1,40 @@
+Exercise 2:
+File: Ex02.java
+Write a class called “StudentMap” that implements the interface MyMap, from
+org.pg4200.les05.MyMap. Using only basic data structures (arrays, trees), implement the
+functionality as follows:
+-
+-
+-
+-
+For each of the 10 digits, you will have a binary tree storing all the students whose
+student id starts with that digit. The ordering within the tree will be based on the order
+of the student ids.
+The binary trees will be accessed from an ArrayList of length 10 (where the index of
+each element of the array is the first digit of the student ids of the students in that tree).
+The operations defined in the MyMap interface (put, get, delete) should maintain this
+structure. This means that, when adding a new student to the map, the student should
+be added in the appropriate position in the correct binary tree.
+In addition, implement a method “Student getByName(String search_name)” that
+returns the first student found whose first or last name matches the search_name
+string.
+See example below for a more visual understanding of the structure:
+Students
+array
+[0]
+[03] ,
+/
+\
+[01]
+[05]
+[1]
+[15], ...
+/
+\
+[12]
+[17]
+[9]
+[97]
+/
+\
+[93] [99]

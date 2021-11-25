@@ -1,0 +1,16 @@
+Exercise 1:
+File: Ex01.txt
+a. Write a regular expression that matches archives names correctly for this exam. The
+name of the file must begin with “pg4200” and must end with “zip”.
+For example, your regular expression
+should match: “pg4200_00000.zip”, “pg4200_12345.zip”
+should NOT match: “pg4201_00000.zip”, “pg4200_ab000.zip”, “pg4200_00000.rar”,
+“pg4200_00000zip”
+
+
+b. Write a regular expression that matches sentences that are about the course (for
+example, a filter for mattermost that only matches sentences when they are about the
+course, and flags them for your attention).
+In this case, a sentence is a collection of characters that ends with a punctuation mark
+(full stop – ‘.’ , exclamation mark – ‘!’, or question mark – ‘?’). To be relevant, the
+sentence must contain one or more of the words: algorithms, algdat, pg4200.
